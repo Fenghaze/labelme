@@ -76,8 +76,8 @@ def json2img(json_file, out, index):
 
 if __name__ == '__main__':
 
-    json_path = r'D:\Deeplearning\data\waterline\waterline_val\json'
-    out = r'D:\Deeplearning\data\waterline\waterline_val\json\out'
+    json_path = './ship_waterline/json'
+    out = './ship_waterline/out'
     json_files = os.listdir(json_path)
 
     for (index, file) in enumerate(json_files):

@@ -77,8 +77,8 @@ def mkdir(dir):
         os.mkdir(dir)
 
 if __name__ == '__main__':
-    label_path = r'D:\Deeplearning\data\waterline\waterline_voc\SegmentationClass'
-    gray_path = r'D:\Deeplearning\data\waterline\waterline_val\json\out\gray'
-    #mkdir(gray_path)
-    #draw_color(label_path)
-    #rgb2gray(label_path, gray_path)
+    label_path = './ship_waterline/out/label'
+    gray_path = './ship_waterline/out/gray'
+    mkdir(gray_path)
+    draw_color(label_path)
+    rgb2gray(label_path, gray_path)
